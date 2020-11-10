@@ -133,6 +133,7 @@ h3 {
 
         a {
           text-transform: uppercase;
+          margin-top: 0.5rem;
 
           &:hover {
             color: #fff;
@@ -219,8 +220,8 @@ h3 {
 }
 .bio {
   margin-top: 4rem;
-  margin-right: 10%;
-  margin-left: 10%;
+  margin-right: 5%;
+  margin-left: 5%;
   display: grid;
   grid-template-columns: 2fr 3fr;
   grid-gap: 3rem;
@@ -236,7 +237,7 @@ h3 {
   .bio-box {
     display: block;
     background-color: #ddd;
-    padding: 2rem;
+    padding: 1.6rem;
     border-left: 2px solid $main-color;
     border-bottom: 3px solid $main-color;
 
@@ -244,6 +245,7 @@ h3 {
       text-align: center;
       text-transform: uppercase;
       font-weight: bolder;
+      font-size: 1.5rem;
     }
 
     p {
@@ -267,7 +269,7 @@ h3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem 3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     .progress {
       overflow: hidden;
       height: 15px;
@@ -299,6 +301,72 @@ h3 {
       width: 100%;
 
     }
+  }
+}
+
+#core-values {
+
+  background: $medium-color;
+  .values {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+
+    .value {
+      width: 100%;
+      height: 100%;
+      margin: 3rem 0;
+      border-left: 2px dotted $main-color;
+
+      i {
+        font-size: 75px;
+        margin-bottom: 1rem;
+      }
+
+      img {
+        height: 75px;
+        margin-bottom: 1rem;
+      }
+
+      h3 {
+        text-transform: uppercase;
+        font-size: 1.2rem;
+      }
+
+
+      &:nth-child(even) {
+        background: $medium-color;
+      }
+    }
+  }
+}
+
+#outside-work {
+  .activity {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 3rem;
+    margin:3rem 0;
+
+    &-picture {
+      background: url(../img/david-pisnoy-r1V-OtZR7XY-unsplash.jpg) no-repeat center center/ cover;
+      overflow: hidden;
+    }
+
+    &-description {
+      padding: 3rem;
+
+      h2{
+        padding-top: 0;
+      }
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+
+
   }
 }
 

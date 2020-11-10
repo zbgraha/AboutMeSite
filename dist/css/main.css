@@ -287,6 +287,7 @@ h3 {
 
 #main-page .blog-content #blog-1 .blog-explanation a {
   text-transform: uppercase;
+  margin-top: 0.5rem;
 }
 
 #main-page .blog-content #blog-1 .blog-explanation a:hover {
@@ -380,8 +381,8 @@ h3 {
 
 .bio {
   margin-top: 4rem;
-  margin-right: 10%;
-  margin-left: 10%;
+  margin-right: 5%;
+  margin-left: 5%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 2fr 3fr;
@@ -400,7 +401,7 @@ h3 {
 .bio .bio-box {
   display: block;
   background-color: #ddd;
-  padding: 2rem;
+  padding: 1.6rem;
   border-left: 2px solid #d61a00;
   border-bottom: 3px solid #d61a00;
 }
@@ -409,6 +410,7 @@ h3 {
   text-align: center;
   text-transform: uppercase;
   font-weight: bolder;
+  font-size: 1.5rem;
 }
 
 .bio .bio-box p {
@@ -430,7 +432,7 @@ h3 {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .goals .grid .progress {
@@ -461,6 +463,76 @@ h3 {
 
 .credentials .degrees .degree {
   width: 100%;
+}
+
+#core-values {
+  background: #ccc;
+}
+
+#core-values .values {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+#core-values .values .value {
+  width: 100%;
+  height: 100%;
+  margin: 3rem 0;
+  border-left: 2px dotted #d61a00;
+}
+
+#core-values .values .value i {
+  font-size: 75px;
+  margin-bottom: 1rem;
+}
+
+#core-values .values .value img {
+  height: 75px;
+  margin-bottom: 1rem;
+}
+
+#core-values .values .value h3 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+#core-values .values .value:nth-child(even) {
+  background: #ccc;
+}
+
+#outside-work .activity {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  grid-gap: 3rem;
+  margin: 3rem 0;
+}
+
+#outside-work .activity-picture {
+  background: url(../img/david-pisnoy-r1V-OtZR7XY-unsplash.jpg) no-repeat center center/cover;
+  overflow: hidden;
+}
+
+#outside-work .activity-description {
+  padding: 3rem;
+}
+
+#outside-work .activity-description h2 {
+  padding-top: 0;
+}
+
+#outside-work .activity-description p {
+  margin-bottom: 1rem;
 }
 
 #contact-a .text-fields {
